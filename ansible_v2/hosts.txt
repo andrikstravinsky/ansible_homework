@@ -1,0 +1,13 @@
+[server1]
+linux1 ansible_host=18.197.109.56 ansible_ssh_user=ec2-user 
+
+[server2]
+linux2 ansible_host=52.59.225.43 ansible_ssh_user=ec2-user 
+
+[server3]
+linux3 ansible_host=52.58.81.52 ansible_ssh_user=ec2-user  
+
+[iaas:children]
+server1
+server2
+

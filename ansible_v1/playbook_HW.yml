@@ -1,0 +1,10 @@
+---
+- name: Create file
+  hosts: iaas
+  roles:
+    - create_file
+
+- name: Get host information
+  hosts: all
+  roles:
+    - get_host_info

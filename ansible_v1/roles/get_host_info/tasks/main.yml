@@ -1,0 +1,3 @@
+--- 
+- name: Get distribution name and version
+  debug: msg="The server {{ansible_nodename}} has installed linux distribution {{ ansible_distribution }} version {{ ansible_distribution_version }}"  

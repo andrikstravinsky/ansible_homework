@@ -1,0 +1,7 @@
+--- 
+- name: Get distribution name and version
+  shell: hostnamectl | grep -oP "(?<=Operating System:).*"
+  register: system_info
+
+- shell: hostname
+  register: hostname  
